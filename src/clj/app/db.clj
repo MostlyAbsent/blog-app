@@ -29,6 +29,3 @@
    (-> (h/select :title :text :date)
        (h/from :post)
        (sql/format))))
-
-(comment
-  (insert-post! "Sixth post" "This is markdown text.\\n===fanc===\\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\no\\nono\\no\\no"))
