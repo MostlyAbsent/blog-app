@@ -31,7 +31,7 @@
     (d/div
      (d/div
       {:class-name
-       "flex flex-col bg-[#fbf8ef] dark:bg-[#292b2e] min-h-screen py-3 px-6"}
+       "flex min-h-[calc(100vh-68px)] justify-center bg-[#fbf8ef] dark:bg-[#292b2e] py-3 px-6"}
       (d/div
        (d/h1
         {:class-name
