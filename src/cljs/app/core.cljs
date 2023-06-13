@@ -12,7 +12,7 @@
 (l/defnc footer []
   (d/footer
    {:class-name
-    "fixed bottom-0 left-0 z-20 w-full p-4 bg-[#fbf8ef] border-t border-[#b3b9be] shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-[#292b2e] dark:border-[#5d4d7a]"}
+    "flex bottom-0 left-0 z-20 w-full p-4 bg-[#fbf8ef] border-t border-[#b3b9be] shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-[#292b2e] dark:border-[#5d4d7a]"}
    (d/span
     {:class-name
      "text-sm text-[#655370] sm:text-center dark:text-[#b2b2b2]"}
