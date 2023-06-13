@@ -33,6 +33,8 @@
       {:class-name
        "flex min-h-[calc(100vh-68px)] justify-center bg-[#fbf8ef] dark:bg-[#292b2e] py-3 px-6"}
       (d/div
+       {:class-name
+        "max-w-3xl"}
        (d/h1
         {:class-name
          "mt-10 text-3xl font-semibold text-[#3a81c3] capitalize lg:text-4xl dark:text-[#4f97d7]"}
