@@ -38,23 +38,23 @@
        (d/h1
         {:class-name
          "mt-10 text-3xl font-semibold text-[#3a81c3] capitalize lg:text-4xl dark:text-[#4f97d7]"}
-        "Just The Tips"
-        (for [{:keys [title text date]} posts]
-          (d/div
+        "Just The Tips")
+       (for [{:keys [title text date]} posts]
+         (d/div
+          {:class-name
+           "mt-8 lg:mx-6 lg:items-center"}
+          (d/h2
            {:class-name
-            "mt-8 lg:mx-6 lg:items-center"}
-           (d/h2
-            {:class-name
-             "text-sm text-[#2d9574] uppercase"}
-            title)
-           (d/p
-            {:class-name
-             "mt-3 text-sm text-[#655370] dark:text-[#b2b2b2] md:text-sm"}
-            ($ ReactMarkdown text))
-           (d/p
-            {:class-name
-             "text-sm text-[#a094a2] dark:text-[#686868]"}
-            (.toString date)))))))
+            "text-sm text-[#2d9574] uppercase"}
+           title)
+          (d/p
+           {:class-name
+            "mt-3 text-sm text-[#655370] dark:text-[#b2b2b2] md:text-sm"}
+           ($ ReactMarkdown text))
+          (d/p
+           {:class-name
+            "text-sm text-[#a094a2] dark:text-[#686868]"}
+           (.toString date))))))
      ($ footer))))
 
 (defn ^:export init []
