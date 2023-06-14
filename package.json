@@ -1,4 +1,10 @@
 {
+  "scripts": {
+    "tw": "npx tailwindcss -i global.css -o resources/public/assets/css/output.css --watch",
+    "css:watch": "onchange 'resources/public/assets/js/*' -- npm run tw",
+    "shadow:watch": "shadow-cljs server",
+    "dev": "run-p -l *:watch"
+  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
