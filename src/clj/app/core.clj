@@ -31,8 +31,3 @@
 
 (defn -main []
   (start))
-
-(defonce server (start))
-
-(.stop server)
-(.start server)

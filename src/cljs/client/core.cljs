@@ -1,7 +1,8 @@
-(ns app.core
+(ns client.core
   (:require
    ["react-dom/client" :as rdom]
    ["react-markdown$default" :as ReactMarkdown]
+   [client.components :refer [footer]]
    [helix.core :refer [$]]
    [helix.dom :as d]
    [helix.hooks :as hooks]
@@ -9,16 +10,7 @@
   (:require-macros
    [app.lib :as l]))
 
-(l/defnc footer []
-  (d/footer
-   {:class-name
-    "flex bottom-0 left-0 z-20 w-full p-4 bg-[#fbf8ef] border-t border-[#b3b9be] shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-[#292b2e] dark:border-[#5d4d7a]"}
-   (d/span
-    {:class-name
-     "text-sm text-[#655370] sm:text-center dark:text-[#b2b2b2]"}
-    "© 2023 Jacob Doran")))
-
-(l/defnc app
+(l/defnc home
   []
   (let [[{:keys [posts]} set-state] (hooks/use-state {:posts [{:title "Woa there buddy"
                                                                :text "This sure is taking a while to load."
@@ -59,4 +51,4 @@
 
 (defn ^:export init []
   (defonce root (rdom/createRoot (js/document.getElementById "app")))
-  (.render root ($ app)))
+  (.render root ($ home)))

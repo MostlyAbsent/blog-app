@@ -1,4 +1,4 @@
-(ns app.dev
+(ns client.dev
   (:require
    [helix.experimental.refresh :as r]))
 
