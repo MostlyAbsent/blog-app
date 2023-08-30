@@ -39,10 +39,10 @@
            {:class-name
             "text-sm text-[#2d9574] uppercase"}
            title)
-          (d/p
+          (d/div
            {:class-name
             "mt-3 text-sm text-[#655370] dark:text-[#b2b2b2] md:text-sm"}
-           ($ ReactMarkdown text))
+           ($ ReactMarkdown {:className "react-markdown"} text))
           (d/p
            {:class-name
             "text-sm text-[#a094a2] dark:text-[#686868]"}
